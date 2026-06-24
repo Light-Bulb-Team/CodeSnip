@@ -1,0 +1,20 @@
+{
+  "name": "codesnip-app",
+  "version": "2.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --windows"
+  },
+  "build": {
+    "appId": "com.selim.codesnip",
+    "productName": "CodeSnip",
+    "win": {
+      "target": "portable",
+      "icon": "icon.ico"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}

@@ -1,0 +1,1035 @@
+* {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f141c;
+    color: #f5f6f9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+
+    /* Body üzerinde ekstra padding veya position bırakmıyoruz, tertemiz */
+    display: flex;
+    flex-direction: column;
+}
+
+/* GÜNCELLENEN ÜST BAR TASARIMI */
+.electron-titlebar {
+    width: 100%;
+    height: 45px;
+    background-color: #0a0d14;
+    /* Sol menünün rengiyle bütünlük sağlandı */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* padding-right değerini 0 yaparak butonları sağ köşeye tamamen sıfırlıyoruz: */
+    padding: 0 0 0 20px;
+
+    user-select: none;
+    z-index: 9999;
+}
+
+/* Pencereyi sürüklenebilir yapan alan */
+.titlebar-drag-zone {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #8e8e93;
+    font-weight: 500;
+    /* İşte sürükleme sihrimiz: */
+    -webkit-app-region: drag;
+}
+
+/* Sağ üstteki Windows butonlarının altına gelen boşluk alan. 
+   Burada sürüklemeyi kapatıyoruz ki butonlar kilitlenmesin! */
+.window-controls-spacer {
+    width: 140px;
+    /* Windows buton genişliği */
+    height: 100%;
+    -webkit-app-region: no-drag;
+}
+
+/* ANA İÇERİK KONTEYNERI */
+.app-container {
+    display: flex;
+    flex: 1;
+    /* Ekranın kalan tüm alt kısmını doldurmasını sağlar */
+    height: calc(100vh - 45px);
+}
+
+/* ================= SIDEBAR (SOL MENÜ) TASARIMI ================= */
+.sidebar {
+    width: 250px;
+    /* Yeni bileşenler için genişliği biraz rahatlattık */
+    background-color: #0a0d14;
+    /* Arka plandan bir tık daha koyu asil sol menü */
+    border-right: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+
+/* YENİ LOGO VE ICO GÖRÜNÜMÜ */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    padding-left: 5px;
+}
+
+.logo-img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-item {
+    background: transparent;
+    color: #8e8e93;
+    border: none;
+    padding: 12px;
+    text-align: left;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: #ffffff;
+}
+
+/* ================= SAĞ İÇERİK ALANI ================= */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    background-color: #0f141c;
+    /* Mat ve derin koyu tema tabanı */
+    transition: background-color 0.3s;
+}
+
+header h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.snip-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Kod Kartları Genel Yapısı */
+.snip-card {
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s, border-color 0.3s;
+}
+
+.snip-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.snip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.snip-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #e4e6eb;
+}
+
+/* Butonlar */
+.copy-btn {
+    background-color: rgba(255, 255, 255, 0.07);
+    color: #e4e6eb;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.copy-btn:hover {
+    background-color: #007aff;
+    color: white;
+    border-color: #007aff;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.delete-btn {
+    background-color: rgba(255, 61, 48, 0.15);
+    color: #ff453a;
+    border: 1px solid rgba(255, 61, 48, 0.2);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: #ff453a;
+    color: white;
+}
+
+/* Kod Editörü / Blokları Görünümü */
+pre {
+    background-color: #080b11;
+    /* Kodların içi tam bir terminal gibi simsiyah ve net */
+    padding: 15px;
+    border-radius: 8px;
+    margin: 0;
+    overflow-x: auto;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+code {
+    font-family: 'SFMono-Regular', Consolas, "Liberation Mono", Menlo, monospace;
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+/* ================= MODERN SIVI CAM (LIQUID GLASS) EFEKTİ ================= */
+.liquid_glass {
+    background: rgba(255, 255, 255, 0.03) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+/* ================= MAT GÖRÜNÜM (CAM EFEKTİ KAPALIYKEN) ================= */
+.no-glass {
+    background-color: #161e2b !important;
+    /* Cam kapanınca asil grafit/lacivert mat ton */
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.no-glass-sidebar {
+    background-color: #0a0d14 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* ================= BİLEŞENLER VE TASARIM ÖGELERİ ================= */
+
+/* Arama Çubuğu */
+.search-container {
+    margin: 20px 0;
+    width: 100%;
+}
+
+#search-input {
+    width: 100%;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.2s;
+}
+
+#search-input:focus {
+    border-color: #007aff;
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0 0 12px rgba(0, 122, 255, 0.25);
+}
+
+#search-input::placeholder {
+    color: #545456;
+}
+
+/* Sayı Rozetleri (Badge) */
+.badge {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: #007aff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.nav-item.active .badge {
+    background-color: #007aff;
+    color: white;
+}
+
+/* YENİ GELİŞMİŞ KALICI NOTLAR ALANI */
+.scratchpad-area {
+    margin-top: auto;
+    /* Sol menünün en altına itilmesini sağlar */
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 20px;
+}
+
+.scratchpad-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.scratchpad-area h3 {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+    color: #8e8e93;
+}
+
+#save-status {
+    font-size: 11px;
+    color: #30d158;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#scratchpad {
+    width: 100%;
+    height: 130px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 13px;
+    resize: none;
+    /* Düzgün durması için manuel büyütmeyi kapattık */
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#scratchpad:focus {
+    border-color: #007aff;
+}
+
+/* Header ve Ekleme Paneli */
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.header-actions .search-container {
+    margin: 0;
+    flex: 1;
+}
+
+.add-toggle-btn {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+
+.add-toggle-btn:hover {
+    background-color: #0056b3;
+}
+
+.add-panel {
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    background-color: #161e2b;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.add-panel h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 6px;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input {
+    flex: 2;
+}
+
+.form-group select {
+    flex: 1;
+    background-color: #080b11;
+}
+
+.form-group textarea {
+    width: 100%;
+    height: 120px;
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.save-btn {
+    background-color: #30d158;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.cancel-btn {
+    background-color: #3a3a3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Sol Menü Footer (Ayarlar Butonu) */
+.sidebar-footer {
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.settings-toggle-btn {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #8e8e93;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.settings-toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+}
+
+/* ================= YENİ GELİŞMİŞ AYARLAR PENCERESİ ================= */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    width: 540px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 30px;
+    border-radius: 16px;
+    background-color: #161e2b;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 15px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.settings-section {
+    margin-bottom: 25px;
+}
+
+.settings-section h4 {
+    color: #007aff;
+    margin: 0 0 12px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    background: rgba(255, 255, 255, 0.01);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.setting-text h5 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.setting-item p {
+    font-size: 12px;
+    color: #8e8e93;
+    margin: 4px 0 0 0;
+}
+
+.setting-item select {
+    background: #080b11;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px 12px;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* Yenileme ve Tehlike Butonları */
+.reload-btn {
+    background-color: #ff9500;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.reload-btn:hover {
+    background-color: #e08200;
+}
+
+.danger-btn {
+    background-color: rgba(255, 59, 48, 0.15);
+    color: #ff453a;
+    border: 1px solid rgba(255, 59, 48, 0.2);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.danger-btn:hover {
+    background-color: #ff3b30;
+    color: white;
+}
+
+/* Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3a3a3c;
+    transition: .3s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .3s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #30d158;
+}
+
+input:checked+.slider:before {
+    transform: translateX(22px);
+}
+
+/* AKILLI TOAST BİLDİRİM SİSTEMİ */
+.toast {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #30d158;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    pointer-events: none;
+    z-index: 10000;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================= JİLET GİBİ AÇIK TEMA DÜZENİ ================= */
+.light-theme {
+    background-color: #c3faf9 !important;
+    color: #000000 !important;
+}
+
+.light-theme .main-content {
+    background-color: #c3faf9 !important;
+}
+
+.light-theme .sidebar {
+    background-color: rgba(232, 230, 230, 0.8) !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.light-theme .no-glass-sidebar {
+    background-color: #e8e6e6 !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+.light-theme .snip-card.liquid_glass {
+    background: rgba(232, 230, 230, 0.6) !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.light-theme .snip-card.no-glass {
+    background-color: #e8e6e6 !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+.light-theme h2,
+.light-theme h3,
+.light-theme strong,
+.light-theme .nav-item,
+.light-theme .sidebar-footer button,
+.light-theme .scratchpad-area h3,
+.light-theme .add-panel h3,
+.light-theme .logo-text,
+.light-theme .modal-content h2,
+.light-theme .settings-section h5 {
+    color: #000000 !important;
+}
+
+.light-theme .nav-item:hover,
+.light-theme .nav-item.active {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #000000 !important;
+}
+
+.light-theme .snip-card pre {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.light-theme .snip-card pre code {
+    color: #000000 !important;
+}
+
+.light-theme #search-input,
+.light-theme .form-group input,
+.light-theme .form-group textarea,
+.light-theme .scratchpad-area textarea {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+.light-theme #search-input::placeholder {
+    color: #555555 !important;
+}
+
+.light-theme .form-group select,
+.light-theme .setting-item select {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+.light-theme .modal-content {
+    background-color: #e8e6e6 !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+.light-theme .setting-item p {
+    color: #444444 !important;
+}
+
+.light-theme .copy-btn {
+    background-color: #007aff !important;
+    color: #ffffff !important;
+}
+
+/* ================= ANIMASYONLAR ================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+/* Favori Buton Tasarımı */
+.fav-btn {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.2s, transform 0.1s;
+}
+
+.fav-btn:hover {
+    transform: scale(1.2);
+    color: #ffcc00;
+}
+
+.fav-btn.fav-active {
+    color: #ffcc00;
+    /* Aktifken altın sarısı parlasın */
+}
+
+/* Düzenle Buton Tasarımı */
+.edit-btn {
+    background-color: #ffcc00;
+    color: #ffffff;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.2s;
+}
+
+.edit-btn:hover {
+    background-color: #ffde5b;
+}
+
+/* Butonların Kapsayıcısı */
+.window-controls {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    /* Sürükleme alanının butonları kilitlememesi için no-drag yapıyoruz */
+    -webkit-app-region: no-drag;
+}
+
+/* Ortak Buton Özellikleri */
+.control-btn {
+    background: transparent;
+    border: none;
+    height: 50px;
+    /* Üst barın yüksekliği ile tam eşit */
+    width: 46px;
+    /* Windows standardı genişlik */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+/* Minimize ve Maximize Hover Efekti (Hafif beyazımsı par things) */
+.minimize-btn:hover,
+.maximize-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Kapatma Butonu Hover Efekti (Klasik Windows Kırmızısı) */
+.close-btn:hover {
+    background-color: #e81123 !important;
+}
+
+/* SVG İkonlarının Boyutu */
+.control-btn svg {
+    transition: fill 0.15s ease;
+}
+
+.titlebar-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+/* Tüm ekranı kaplayan karartma ve bulanıklaştırma katmanı */
+#spotlight-overlay {
+    position: fixed;
+    top: 45px;
+    /* Başlık çubuğunun tam bittiği yer */
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 45px);
+    /* 45px ile eşitlendi, taşma yapmaz */
+    background: rgba(0, 0, 0, 0.4);
+    /* Camı öne çıkarmak için arka planı biraz hafiflettik */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 9998;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 15vh;
+    transition: opacity 0.2s ease;
+}
+
+/* Gizliyken görünmez yap */
+.spotlight-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* 🧪 Ortada yüzen LIQUID GLASS (Cam Efektli) Ana Pencere */
+.spotlight-window {
+    width: 650px;
+
+    /* Cam Efekti Ayarları */
+    background: rgba(25, 25, 25, 0.45);
+    /* Şeffaflığı artırarak arkadaki kodların buğulu görünmesini sağladık */
+    backdrop-filter: blur(20px) saturate(160%);
+    /* İçerideki camın kendi bulanıklığı ve renk canlılığı */
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+
+    /* İnce Parlayan Cam Çerçevesi (Üst ve sol kenarlar ışık alır) */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 14px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    /* İç tarafa hafif parlama çizgisi */
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+/* Arama çubuğunun kapsayıcısı */
+.spotlight-search-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.02);
+    /* Üst alan için çok hafif bir kontrast */
+}
+
+/* Arama ikonu */
+.spotlight-icon {
+    color: rgba(255, 255, 255, 0.5);
+    /* İkon rengini cam temasına uydurduk */
+    font-size: 18px;
+    margin-right: 14px;
+}
+
+/* Input'un kendisi */
+#spotlight-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    /* Yazının cam üzerinde parlamasını ve net okunmasını sağlar */
+}
+
+#spotlight-input::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+    /* Placeholder rengini biraz daha yumuşattık */
+}
+
+/* Alt sonuçlar ve ipuçları alanı */
+#spotlight-results {
+    padding: 12px;
+    max-height: 300px;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.2);
+    /* Sonuçlar alt panelde hafifçe ayrılsın */
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.spotlight-hint {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+.spotlight-hint span {
+    color: #00adb5;
+    /* Projenin canlı neon mavisini buraya da taşıdık */
+    font-weight: 500;
+}
+
+/* --- Paylaş Butonu ve Kart Aksiyonları Düzenlemesi --- */
+.card-actions {
+    display: flex;
+    gap: 6px;
+    /* Butonların arasındaki boşluk */
+    align-items: center;
+}
+
+/* Paylaş Butonunun Genel Tasarımı */
+.share-btn {
+    background: rgba(255, 193, 7, 0.15);
+    /* Hafif şeffaf sarı/turuncu tonu */
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    color: #ffc107;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    /* İkon ve metin arası boşluk */
+}
+
+/* Paylaş Butonuna Hover (Fareyle üzerine gelince) Efekti */
+.share-btn:hover {
+    background: #ffc107;
+    color: #111;
+    /* Koyu temada yazı net okunsun diye */
+    box-shadow: 0 0 8px rgba(255, 193, 7, 0.4);
+}
+
+/* Eğer butonların genel bir stili varsa (edit-btn, copy-btn gibi) uyum sağlaması için */
+.card-actions button {
+    outline: none;
+    font-weight: 500;
+}
+
+/* --- Spotlight İçindeki Geri Bildirimler İçin Küçük İpucu Tasarımı (Opsiyonel) --- */
+#spotlight-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Animasyonlu Yeni Kart Geçişi (fade-in sınıfı için) */
+.fade-in {
+    animation: fadeInAnim 0.3s ease-out forwards;
+}
+
+@keyframes fadeInAnim {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
