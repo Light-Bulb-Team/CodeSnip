@@ -70,9 +70,9 @@ npm run build
 ## Ekran Görüntüleri
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/642a582a-bb9d-468e-aabe-91e54f2fd465" width="900">
+<img src="screenshot_1.png" width="900">
 <br><br>
-<img src="https://github.com/user-attachments/assets/f1f27052-464d-4db9-a9a5-0c7d9117d4a8" width="900">
+<img src="screenshot_2.png" width="900">
 </p>
 
 
