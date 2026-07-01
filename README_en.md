@@ -1,7 +1,7 @@
 # CodeSnip — Next-Generation Code & Prompt Manager
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-2.0-00adb5?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/Version-26Q2.5-00adb5?style=for-the-badge" alt="Version">
   <img src="https://img.shields.io/badge/Built%20With-Electron-47848F?style=for-the-badge" alt="Electron">
 </p>
 
