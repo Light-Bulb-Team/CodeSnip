@@ -6,8 +6,8 @@
 </p>
 
 <p align="center">
-  <a href="README.md"><img src="https://img.shields.io/badge/Dil-T%C3%BCrk%C3%A7e-red?style=flat-flat" alt="TR"></a>
-  <a href="README.en.md"><img src="https://img.shields.io/badge/Language-English-blue?style=flat-flat" alt="EN"></a>
+  <a href="README.md"><img src="https://img.shields.io/badge/Language-Turkish-red?style=flat-flat" alt="TR"></a>
+  <a href="README_en.md"><img src="https://img.shields.io/badge/Language-English-blue?style=flat-flat" alt="EN"></a>
 </p>
 
 <p align="center">
@@ -19,19 +19,21 @@
 
 ## About
 
-CodeSnip is a modern Electron application built for developers, designers, and AI users.
+CodeSnip is a modern Electron application designed for developers, designers, and AI enthusiasts.
+
 Organize your code snippets into categories, search them instantly, copy them with a single click, and generate Base64-based sharing links.
-All your data is stored locally on your device, allowing the application to work without an internet connection.
+
+All data is stored locally on your device, allowing the application to work without an internet connection.
 
 > [!NOTE]
-> Since the application works entirely offline, your data always stays on your device.
+> Since CodeSnip runs entirely offline, your data always stays on your device.
 
 ---
 
 ## Features
 
 - Liquid Glass (Frosted Glass) user interface
-- Global Spotlight search (`Ctrl + Space`)
+- Global Spotlight Search (`Ctrl + Space`)
 - Base64-based sharing system
 - English and Turkish language support
 - Fully offline operation
@@ -46,32 +48,38 @@ All your data is stored locally on your device, allowing the application to work
 
 ### Requirements
 
-- Node.js (version 18 or later recommended)
+- Node.js (v18 or later)
 - npm
 
-### Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/MstfSlm38/CodeSnip.git
-cd CodeSnip
 ```
 
-### Install dependencies
+### 2. Navigate to the project folder
+
+```bash
+cd codesnip
+```
+
+### 3. Install dependencies
 
 ```bash
 npm install
+npm install electron --save-dev
 ```
 
-### Run in development mode
+### 4. Run in development mode
 
 ```bash
 npm start
 ```
 
-### Build the production version
+### 5. Build the production package
 
 ```bash
-npm run build
+npm run dist
 ```
 
 ---
@@ -79,7 +87,7 @@ npm run build
 ## Screenshots
 
 <p align="center">
-<img src="screenshot_en_1.png" width="900">
+<img src="screenshot_1.png" width="900">
 <br><br>
 <img src="screenshot_2.png" width="900">
 </p>
@@ -90,8 +98,12 @@ npm run build
 
 | Shortcut | Description |
 |----------|-------------|
-| `Ctrl + Space` | Open or close Spotlight Search |
-| `Esc` | Close the currently open window |
+| `Ctrl + Shift + S` | **Global Shortcut:** Brings CodeSnip to the foreground and opens Spotlight Search, even when the application is running in the background. |
+| `Ctrl + Space` | Quickly open or close the Spotlight Search panel while using the application. |
+| `Esc` | Close the currently open Spotlight Search panel. |
+| `Space` | Open the **Quick Look** preview for the selected snippet while navigating Spotlight Search results. |
+| `Arrow Up / Down` | Navigate through Spotlight Search results. |
+| `Enter` | Send the selected snippet to the main search bar. If the selected item is in the `+category` format, it instantly creates a new snippet under that category. |
 
 ---
 
@@ -106,8 +118,38 @@ npm run build
 
 ## Roadmap
 
-- [x] v2.0 — Spotlight Search, Sharing System, and redesigned Liquid Glass UI
-- [ ] v2.5 — JSON import/export
-- [ ] v3.0 — Optional end-to-end encrypted cloud synchronization
-- [ ] v3.5 — Visual Studio Code extension
-- [ ] v4.0 — Plugin system
+- [x] v1.0 — Initial Release
+  - [x] v1.1 — Bug Fixes & Favorites Feature
+
+- [x] 26Q2 — Spotlight Search, Sharing System, and Redesigned Liquid Glass UI
+  - [x] 26Q2.5 — JSON Import/Export, Improved Spotlight Search, and Versioning System Update
+
+- [ ] 26Q3 — macOS Support
+- [ ] 26Q4 — Visual Studio Code Extension
+- [ ] 27Q1 — Plugin System
+
+> [!NOTE]
+> The roadmap may change over time as new features are added or bugs are discovered.
+
+---
+
+## Contributing
+
+Want to help improve CodeSnip?
+
+- Fork this repository.
+- Create a new branch for your feature.
+  ```bash
+  git checkout -b feature-name
+  ```
+- Commit your changes.
+  ```bash
+  git commit -m "Add awesome feature"
+  ```
+- Push your branch.
+  ```bash
+  git push origin feature-name
+  ```
+- Open a **Pull Request**.
+
+If you find a bug, feel free to report it through the **Issues** section.
