@@ -79,7 +79,7 @@ npm run build
 ## Screenshots
 
 <p align="center">
-<img src="screenshot_1.png" width="900">
+<img src="screenshot_en_1.png" width="900">
 <br><br>
 <img src="screenshot_2.png" width="900">
 </p>
