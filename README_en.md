@@ -152,4 +152,4 @@ Want to help improve CodeSnip?
   ```
 - Open a **Pull Request**.
 
-If you find a bug, feel free to report it through the **Issues** section.
+If you find a bug, feel free to report it through the **Issues** section!
