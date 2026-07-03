@@ -89,11 +89,19 @@ npm run dist
 <img src="screenshot_2.png" width="900">
 </p>
 
-
-
-
 ---
 
+## Beta Ekran Görüntüleri
+>[!WARNING]
+>Bunlar beta ekran görüntüleridir. Çoğu şeyler zamanla değişebilir.
+
+<p align="center">
+<img src="screenshot1_beta.png" width="900">
+<br><br>
+<img src="screenshot2_beta.png" width="900">
+</p>
+
+---
 ## Klavye Kısayolları
 
 | Kısayol | Açıklama |
@@ -120,10 +128,10 @@ npm run dist
 - [x] v1.0 — İlk Sürüm
   - [x] v1.1 — Hotfix ve Favorileme Özelliği
 
-- [x] 26Q2 — Spotlight, Paylaşım ve Yenilenen Liquid Glass Tasarımı
+- [x] 26Q2 (v2.0) — Spotlight, Paylaşım ve Yenilenen Liquid Glass Tasarımı
   - [x] 26Q2.5 — JSON dışa/içe aktarma, Daha İyi Spotlight ve Sürüm İsmi Değişikliği
 
-- [ ] 26Q3 — MacOS Desteği
+- [ ] 26Q3 — MacOS Desteği, Yenilenen Tema ve Animasyonlar
 - [ ] 26Q4 — Visual Studio Code uzantısı
 - [ ] 27Q1 — Eklenti (Plugin) sistemi
 
