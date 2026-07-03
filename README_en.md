@@ -94,6 +94,18 @@ npm run dist
 
 ---
 
+## Beta Screenshots
+>[!WARNING]
+>These are the beta screenshots. It's all subject to change!
+
+<p align="center">
+<img src="screenshot1_beta.png" width="900">
+<br><br>
+<img src="screenshot2_beta.png" width="900">
+</p>
+
+---
+
 ## Keyboard Shortcuts
 
 | Shortcut | Description |
