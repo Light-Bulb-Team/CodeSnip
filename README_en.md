@@ -99,9 +99,9 @@ npm run dist
 >These are the beta screenshots. It's all subject to change!
 
 <p align="center">
-<img src="screenshot1_beta.png" width="900">
+<img src="screenshot_beta-1.png" width="900">
 <br><br>
-<img src="screenshot2_beta.png" width="900">
+<img src="screenshot_beta-2.png" width="900">
 </p>
 
 ---
@@ -136,7 +136,7 @@ npm run dist
 - [x] 26Q2 — Spotlight Search, Sharing System, and Redesigned Liquid Glass UI
   - [x] 26Q2.5 — JSON Import/Export, Improved Spotlight Search, and Versioning System Update
 
-- [ ] 26Q3 — macOS Support
+- [ ] 26Q3 — macOS and Linux (Debian, Arch, Fedora) Support, Improved Appearence and new Category Editing
 - [ ] 26Q4 — Visual Studio Code Extension
 - [ ] 27Q1 — Plugin System
 
