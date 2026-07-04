@@ -94,6 +94,7 @@ npm run dist
 ---
 
 ## Beta Ekran Görüntüleri
+<br>
 >[!WARNING]
 >Bunlar beta ekran görüntüleridir. Çoğu şeyler zamanla değişebilir.
 
@@ -133,8 +134,8 @@ npm run dist
 - [x] 26Q2 (v2.0) — Spotlight, Paylaşım ve Yenilenen Liquid Glass Tasarımı
   - [x] 26Q2.5 — JSON dışa/içe aktarma, Daha İyi Spotlight ve Sürüm İsmi Değişikliği
 
-- [ ] 26Q3 — MacOS Desteği, Yenilenen Tema ve Animasyonlar
-- [ ] 26Q4 — Visual Studio Code uzantısı
+- [ ] 26Q3 — MacOS ve Linux (Debian, Arch, Fedora) Desteği, Daha iyi Görünüm ve Kategori Yönetimi
+- [ ] 26Q4 — Visual Studio Code uzantısı 
 - [ ] 27Q1 — Eklenti (Plugin) sistemi
 
 >[!NOTE]
