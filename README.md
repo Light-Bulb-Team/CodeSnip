@@ -96,9 +96,9 @@ npm run dist
 >Bunlar beta ekran görüntüleridir. Çoğu şeyler zamanla değişebilir.
 
 <p align="center">
-<img src="screenshot1_beta.png" width="900">
+<img src="screenshot_beta-1.png" width="900">
 <br><br>
-<img src="screenshot2_beta.png" width="900">
+<img src="screenshot_beta-2.png" width="900">
 </p>
 
 ---
