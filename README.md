@@ -148,4 +148,4 @@ Projeyi geliştirmemize yardımcı olmak ister misiniz?
 -  Değişikliklerinizi kaydedin (`git commit -am 'Yeni özellik eklendi'`).
 -  Dalınızı gönderin (`git push origin yeni-ozellik`).
 -  Bir **Pull Request** (Değişiklik İsteği) oluşturun.
--  Ya da eğer proje'de hata bulursanız Bug Report kısmından bize bildirmekten çekinmeyin!
+-  Ya da eğer proje'de hata bulursanız Issues kısmından bize bildirmekten çekinmeyin!
