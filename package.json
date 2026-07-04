@@ -2,6 +2,7 @@
   "name": "codesnip-app",
   "version": "26Q2.5",
   "main": "main.js",
+  "license": "MIT",
   "scripts": {
     "start": "electron .",
     "dist": "electron-builder --windows"
