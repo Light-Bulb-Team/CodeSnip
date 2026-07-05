@@ -21,9 +21,7 @@
 ## About
 
 CodeSnip is a modern Electron application designed for developers, designers, and AI enthusiasts.
-
 Organize your code snippets into categories, search them instantly, copy them with a single click, and generate Base64-based sharing links.
-
 All data is stored locally on your device, allowing the application to work without an internet connection.
 
 > [!NOTE]
@@ -126,6 +124,7 @@ npm run dist
 - JavaScript
 - HTML5
 - CSS3
+- Node.js
 
 ---
 
@@ -134,12 +133,12 @@ npm run dist
 - [x] v1.0 — Initial Release
   - [x] v1.1 — Bug Fixes & Favorites Feature
 
-- [x] 26Q2 — Spotlight Search, Sharing System, and Redesigned Liquid Glass UI
+- [x] 26Q2 (v2.0) — Spotlight Search, Sharing System, and Redesigned Liquid Glass UI
   - [x] 26Q2.5 — JSON Import/Export, Improved Spotlight Search, and Versioning System Update
 
 - [ ] 26Q3 — macOS and Linux (Debian, Arch, Fedora) Support, Improved Appearence and new Category Management
-- [ ] 26Q4 — Visual Studio Code Extension
-- [ ] 27Q1 — Plugin System
+- [ ] 26Q4 — App Optimization and Full Support for Linux (Slackware, Gentoo and Red Hat)
+- [ ] 27Q1 — Plugin System and Snippet Previews
 
 > [!NOTE]
 > The roadmap may change over time as new features are added or bugs are discovered.
