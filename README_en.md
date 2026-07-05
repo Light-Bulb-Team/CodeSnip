@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="README.md"><img src="https://img.shields.io/badge/Language-Turkish-red?style=flat-flat" alt="TR"></a>
+  <a href="README.md"><img src="https://img.shields.io/badge/Dil-Turkish-red?style=flat-flat" alt="TR"></a>
   <a href="README_en.md"><img src="https://img.shields.io/badge/Language-English-blue?style=flat-flat" alt="EN"></a>
 </p>
 
