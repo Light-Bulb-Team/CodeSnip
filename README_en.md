@@ -137,7 +137,7 @@ npm run dist
 - [x] 26Q2 — Spotlight Search, Sharing System, and Redesigned Liquid Glass UI
   - [x] 26Q2.5 — JSON Import/Export, Improved Spotlight Search, and Versioning System Update
 
-- [ ] 26Q3 — macOS and Linux (Debian, Arch, Fedora) Support, Improved Appearence and new Category Editing
+- [ ] 26Q3 — macOS and Linux (Debian, Arch, Fedora) Support, Improved Appearence and new Category Management
 - [ ] 26Q4 — Visual Studio Code Extension
 - [ ] 27Q1 — Plugin System
 
