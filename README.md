@@ -96,8 +96,8 @@ npm run dist
 
 ## Beta Ekran Görüntüleri
 <br>
->[!WARNING]
->Bunlar beta ekran görüntüleridir. Çoğu şeyler zamanla değişebilir.
+> [!WARNING]
+> Bunlar beta ekran görüntüleridir. Çoğu şeyler zamanla değişebilir.
 
 <p align="center">
 <img src="screenshot_beta-1.png" width="900">
