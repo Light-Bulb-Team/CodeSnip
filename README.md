@@ -13,7 +13,7 @@
 
 > [!IMPORTANT]
 > **10 Temmuz** itibarıyla topluluk tarafından bildirilen tüm hatalar, geliştirici ekibi tarafından doğrulandıktan sonra `CBug-[numara]` formatında sınıflandırılıp numaralandırılacaktır.
-> Bir hata bildirirken yalnızca hatayı ayrıntılı şekilde açıklamanız yeterlidir. Geliştirici ekibi tarafından doğrulanan her hata kendine ait bir **CBug** numarası alacak ve bu numara hata takibi ile ilerleme durumunun izlenmesinde kullanılacaktır.
+> Daha fazla detay için <a href="https://github.com/Light-Bulb-Team/CodeSnip/discussions/6">buraya tıklayın.</a>
 
 
 <hr>
