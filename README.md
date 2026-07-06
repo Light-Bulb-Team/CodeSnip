@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  <a href="README.md"><img src="https://img.shields.io/badge/Dil-Turkish-red?style=for-the-badge" alt="TR"></a>
-  <a href="README_en.md"><img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge" alt="EN"></a>
+  <a href="README_tr.md"><img src="https://img.shields.io/badge/Dil-Turkish-red?style=for-the-badge" alt="TR"></a>
+  <a href="README.md"><img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge" alt="EN"></a>
 </p>
 
 > [!IMPORTANT]
