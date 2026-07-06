@@ -11,9 +11,16 @@
   <a href="README_en.md"><img src="https://img.shields.io/badge/Language-English-blue?style=flat-flat" alt="EN"></a>
 </p>
 
+> [!IMPORTANT]
+> **10 Temmuz** itibarıyla topluluk tarafından bildirilen tüm hatalar, geliştirici ekibi tarafından doğrulandıktan sonra `CBug-[numara]` formatında sınıflandırılıp numaralandırılacaktır.
+> Bir hata bildirirken yalnızca hatayı ayrıntılı şekilde açıklamanız yeterlidir. Geliştirici ekibi tarafından doğrulanan her hata kendine ait bir **CBug** numarası alacak ve bu numara hata takibi ile ilerleme durumunun izlenmesinde kullanılacaktır.
+
+
+<hr>
+
 <p align="center">
   Modern, hızlı ve tamamen çevrimdışı çalışan bir masaüstü kod ve AI prompt yöneticisi.<br>
-  Kod parçalarını, terminal komutlarını ve prompt'larınızı tek bir uygulamada düzenleyin, arayın ve paylaşın.
+  Kod parçalarınızı, terminal komutlarınızı ve prompt'larınızı tek bir uygulamada düzenleyin, arayın ve paylaşın.
 </p>
 
 <img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/1e01968b-ef57-46bb-a8e7-743f0b2e65e5" />
