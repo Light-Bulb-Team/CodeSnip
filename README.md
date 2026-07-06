@@ -95,7 +95,7 @@ npm run dist
 ---
 
 ## Beta Ekran Görüntüleri
-<br>
+
 > [!WARNING]
 > Bunlar beta ekran görüntüleridir. Çoğu şeyler zamanla değişebilir.
 
