@@ -136,8 +136,8 @@ npm run dist
 - [x] 26Q2 (v2.0) — Spotlight Search, Sharing System, and Redesigned Liquid Glass UI
   - [x] 26Q2.5 — JSON Import/Export, Improved Spotlight Search, and Versioning System Update
 
-- [ ] 26Q3 — macOS and Linux (Debian, Arch, Fedora) Support, Improved Appearence and new Category Management
-- [ ] 26Q4 — App Optimization and Full Support for Linux (Slackware, Gentoo and Red Hat)
+- [ ] 26Q3 —  and Linux (Debian, Arch, Red Hat) Support, Improved Appearence and new Category Management
+- [ ] 26Q4 — App Optimization, macOS Support and Full Support for Linux (Slackware and Gentoo)
 - [ ] 27Q1 — Plugin System and Snippet Previews
 
 > [!NOTE]
