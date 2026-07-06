@@ -3,20 +3,26 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Version-26Q2.5-00adb5?style=for-the-badge" alt="Version">
   <img src="https://img.shields.io/badge/Built%20With-Electron-47848F?style=for-the-badge" alt="Electron">
-<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License">
 </p>
 
 <p align="center">
-  <a href="README.md"><img src="https://img.shields.io/badge/Dil-Turkish-red?style=flat-flat" alt="TR"></a>
-  <a href="README_en.md"><img src="https://img.shields.io/badge/Language-English-blue?style=flat-flat" alt="EN"></a>
+  <a href="README.md"><img src="https://img.shields.io/badge/Dil-Turkish-red?style=for-the-badge" alt="TR"></a>
+  <a href="README_en.md"><img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge" alt="EN"></a>
 </p>
+
+> [!IMPORTANT]
+> **Starting July 10**, all bugs reported by the community will be verified by the development team, then categorized and assigned an ID in the `CBug-[number]` format.
+> For more details, <a href="https://github.com/Light-Bulb-Team/CodeSnip/discussions/6">click here.</a>
+
+## ㅤ
 
 <p align="center">
   A modern, fast, and fully offline desktop application for managing code snippets and AI prompts.<br>
   Organize, search, and share your code snippets, terminal commands, and prompts—all in one place.
 </p>
 
----
+
 
 ## About
 
@@ -169,3 +175,8 @@ If you find a bug, feel free to report it through the **Issues** section!
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Developers
+
+- Mustafa Selim AYDENİZ
+- Ali Kerem YILMAZ
