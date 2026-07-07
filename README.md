@@ -30,7 +30,7 @@ CodeSnip is a modern Electron application designed for developers, designers, an
 Organize your code snippets into categories, search them instantly, copy them with a single click, and generate Base64-based sharing links.
 All data is stored locally on your device, allowing the application to work without an internet connection.
 
-> [!NOTE]
+> [!TIP]
 > Since CodeSnip runs entirely offline, your data always stays on your device.
 
 ---
