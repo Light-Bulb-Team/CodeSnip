@@ -59,7 +59,7 @@ All data is stored locally on your device, allowing the application to work with
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/MstfSlm38/CodeSnip.git
+git clone https://github.com/Light-Bulb-Team/CodeSnip.git
 ```
 
 ### 2. Navigate to the project folder
