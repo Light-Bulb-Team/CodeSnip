@@ -78,13 +78,7 @@ npm install
 npm install electron --save-dev
 ```
 
-### 4- Geliştirici modunda çalıştırın
-
-```bash
-npm start
-```
-
-### 5- Üretim sürümünü paketleyin
+### 4- Üretim sürümünü paketleyin
 
 ```bash
 npm run dist
