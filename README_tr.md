@@ -33,7 +33,7 @@ CodeSnip; geliştiriciler, tasarımcılar ve yapay zekâ ile çalışan kullanı
 Kod parçalarını kategorilere ayırabilir, anında arayabilir, tek tıkla kopyalayabilir ve Base64 tabanlı paylaşım bağlantıları oluşturabilirsiniz.
 Tüm veriler cihazınızda saklanır ve uygulama internet bağlantısı gerektirmeden çalışır.
 
-> [!NOTE]
+> [!TIP]
 > Uygulama tamamen çevrimdışı çalıştığı için verileriniz güvendedir.
 
 ---
