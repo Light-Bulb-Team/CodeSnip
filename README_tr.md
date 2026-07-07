@@ -62,7 +62,7 @@ Tüm veriler cihazınızda saklanır ve uygulama internet bağlantısı gerektir
 ### 1- Depoyu klonlayın
 
 ```bash
-git clone https://github.com/MstfSlm38/CodeSnip.git
+git clone https://github.com/Light-Bulb-Team/CodeSnip.git
 ```
 
 ### 2- Oluşturulan Klasöre Gidin
