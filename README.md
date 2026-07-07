@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="README_tr.md"><img src="https://img.shields.io/badge/Dil-Turkish-red?style=for-the-badge" alt="TR"></a>
+  <a href="README_tr.md"><img src="https://img.shields.io/badge/Dil-Türkçe-red?style=for-the-badge" alt="TR"></a>
   <a href="README.md"><img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge" alt="EN"></a>
 </p>
 
@@ -75,13 +75,7 @@ npm install
 npm install electron --save-dev
 ```
 
-### 4. Run in development mode
-
-```bash
-npm start
-```
-
-### 5. Build the production package
+### 4. Build the production package
 
 ```bash
 npm run dist
