@@ -150,6 +150,7 @@ npm run dist
 Want to help improve CodeSnip?
 
 - Fork this repository.
+
 - Create a new branch for your feature.
   ```bash
   git checkout -b feature-name
