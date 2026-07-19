@@ -12,7 +12,7 @@
 </p>
 
 > [!IMPORTANT]
-> **10 Temmuz** itibarıyla topluluk tarafından bildirilen tüm hatalar, geliştirici ekibi tarafından doğrulandıktan sonra `CBug-[numara]` formatında sınıflandırılıp numaralandırılacaktır.
+> Bundan sonra, topluluk tarafından bildirilen tüm hatalar, geliştirici ekibi tarafından doğrulandıktan sonra `CBug-[numara]` formatında sınıflandırılıp numaralandırılacaktır.
 > Daha fazla detay için <a href="https://github.com/Light-Bulb-Team/CodeSnip/discussions/6">buraya tıklayın.</a>
 
 
