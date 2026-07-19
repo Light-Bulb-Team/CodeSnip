@@ -12,7 +12,7 @@
 </p>
 
 > [!IMPORTANT]
-> **Starting July 10**, all bugs reported by the community will be verified by the development team, then categorized and assigned an ID in the `CBug-[number]` format.
+> From now on, all bugs reported by the community will be verified by the development team, then categorized and assigned an ID in the `CBug-[number]` format.
 > For more details, <a href="https://github.com/Light-Bulb-Team/CodeSnip/discussions/6">click here.</a>
 
 ## ㅤ
