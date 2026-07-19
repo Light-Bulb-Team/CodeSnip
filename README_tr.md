@@ -136,7 +136,8 @@ npm run dist
 
 - [x] 26Q2 (v2.0) — Spotlight, Paylaşım ve Yenilenen Liquid Glass Tasarımı
   - [x] 26Q2.5 — JSON dışa/içe aktarma, Daha İyi Spotlight ve Sürüm İsmi Değişikliği
-
+- [x] 26Q3-beta — 26Q3'deki özelliklerin bir kısmının eklenmesi
+- [ ] 26Q3-release-candidate — Hotfixler ve Sürüm Adayları
 - [ ] 26Q3 — Linux (Debian, Arch, Red Hat) Desteği, Daha iyi Görünüm, Kişiselleştirme ve Kategori Yönetimi
 - [ ] 26Q4 — Uygulama Optimizasyonu, macOS Linux İçin Tam Destek (Slackware ve Gentoo)
 - [ ] 27Q1 — Eklenti (Plugin) sistemi ve Kod Önizlemesi
