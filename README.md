@@ -11,10 +11,6 @@
   <a href="README.md"><img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge" alt="EN"></a>
 </p>
 
-> [!IMPORTANT]
-> From now on, all bugs reported by the community will be verified by the development team, then categorized and assigned an ID in the `CBug-[number]` format.
-> For more details, <a href="https://github.com/Light-Bulb-Team/CodeSnip/discussions/6">click here.</a>
-
 ## ㅤ
 
 <p align="center">
@@ -37,7 +33,7 @@ All data is stored locally on your device, allowing the application to work with
 
 ## Features
 
-- Liquid Glass (Frosted Glass) user interface
+- Liquid Glass user interface
 - Global Spotlight Search (`Ctrl + Space`)
 - Base64-based sharing system
 - English and Turkish language support
@@ -136,7 +132,7 @@ npm run dist
 - [x] 26Q2 (v2.0) — Spotlight Search, Sharing System, and Redesigned Liquid Glass UI
   - [x] 26Q2.5 — JSON Import/Export, Improved Spotlight Search, and Versioning System Update
 
-- [ ] 26Q3 —  and Linux (Debian, Arch, Red Hat) Support, Improved Appearence and new Category Management
+- [x] 26Q3 —  and Linux (Debian, Arch, Red Hat) Support, Improved Appearence and new Category Management
 - [ ] 26Q4 — App Optimization, macOS Support and Full Support for Linux (Slackware and Gentoo)
 - [ ] 27Q1 — Plugin System and Snippet Previews
 
