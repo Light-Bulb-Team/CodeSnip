@@ -11,11 +11,6 @@
   <a href="README.md"><img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge" alt="EN"></a>
 </p>
 
-> [!IMPORTANT]
-> Bundan sonra, topluluk tarafından bildirilen tüm hatalar, geliştirici ekibi tarafından doğrulandıktan sonra `CBug-[numara]` formatında sınıflandırılıp numaralandırılacaktır.
-> Daha fazla detay için <a href="https://github.com/Light-Bulb-Team/CodeSnip/discussions/6">buraya tıklayın.</a>
-
-
 <hr>
 
 <p align="center">
