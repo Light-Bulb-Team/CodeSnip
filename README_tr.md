@@ -128,10 +128,11 @@ npm run dist
 ## Yol Haritası
 - [x] v1.0 — İlk Sürüm
   - [x] v1.1 — Hotfix ve Favorileme Özelliği
-
 - [x] 26Q2 (v2.0) — Spotlight, Paylaşım ve Yenilenen Liquid Glass Tasarımı
   - [x] 26Q2.5 — JSON dışa/içe aktarma, Daha İyi Spotlight ve Sürüm İsmi Değişikliği
 - [x] 26Q3 — Linux (Debian, Arch, Red Hat) Desteği, Daha iyi Görünüm, Kişiselleştirme ve Kategori Yönetimi
+	- [x] 26Q3.1 — Kritik Hotfixler
+	- [x] 26Q3.5 — Önemli Hotfixler, Yeni İspanyolca Dil Desteği ve Açık Tema İyileştirmeleri
 - [ ] 26Q4 — Uygulama Optimizasyonu, macOS Linux İçin Tam Destek (Slackware ve Gentoo)
 - [ ] 27Q1 — Eklenti (Plugin) sistemi ve Kod Önizlemesi
 
