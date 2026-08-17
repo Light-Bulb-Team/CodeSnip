@@ -18,7 +18,7 @@
   Organize, search, and share your code snippets, terminal commands, and prompts—all in one place.
 </p>
 
-<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/1e01968b-ef57-46bb-a8e7-743f0b2e65e5" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8cabcf7c-8c24-4b0e-b44f-2e267533bc68" />
 
 ## About
 
@@ -82,23 +82,25 @@ npm run dist
 ## Screenshots
 
 <p align="center">
-<img src="screenshot_1.png" width="900">
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e31ec191-3f60-4b64-9a4b-7a8306fd653d" />
 <br><br>
-<img src="screenshot_2.png" width="900">
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/83036436-5c32-43c4-aa88-24eea23bbb24" />
 </p>
 
 ---
 
 ## Beta Screenshots
->[!WARNING]
+<!-- >[!WARNING]
 >These are the beta screenshots. It's all subject to change!
 
 <p align="center">
-<img src="screenshot_beta-1.png" width="900">
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/413c14b5-32f6-4b5a-944f-2bedb1ea5938" />
 <br><br>
-<img src="screenshot_beta-2.png" width="900">
-</p>
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/846e69bb-3639-41fa-80ab-01f387e39f46" />
+</p> -->
 
+>[!NOTE]
+>Since there is no beta versions available, there is no beta screenshots. Stay tuned for the beta releases!
 ---
 
 ## Keyboard Shortcuts
