@@ -156,4 +156,3 @@ Bu proje **MIT Lisansı** ile lisanslanmıştır. Detaylar için [LICENSE](LICEN
 ## Geliştiriciler
 
 - Mustafa Selim AYDENİZ
-- Ali Kerem YILMAZ
